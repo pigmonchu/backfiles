@@ -1,0 +1,25 @@
+<style>
+    p.button_line {
+        margin: 30px;
+        text-align: center;
+    }
+
+	a.button {
+    	border: 1px solid #d35400;
+        border-radius: 5px;
+        padding: 10px;
+        min-width: 120px;
+        font-family: 'Helvetica Neue';
+        font-size: 16px;
+        color: white;
+        background-color: #d35400;
+    }
+</style>
+
+<p>{{ _('Welcome! Thanks for signing up on the Keep Coding learning platform.') }}</p>
+<p class="button_line"><a class="button" href="{{ confirm_url }}">{{ _('Click to confirm') }}</a></p>
+<p>{{ _('Or copy the following link in your browser') }}<br>
+    <a href="{{ confirm_url}}">{{ confirm_url }}</a>
+</p>
+<p>{{ _("After that you can start your learning. Let's go!") }}</p>
+<p>PD: {{ _('If you do not use the link in the next hour, it will expire.') }}.</p>

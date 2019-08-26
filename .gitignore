@@ -1,0 +1,9 @@
+instance/config.py
+venv
+.vscode/
+data/
+__pycache__/
+.idea/
+.ipynb_checkpoints/
+.babel
+.babel_compile

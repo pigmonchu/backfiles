@@ -1,0 +1,31 @@
+<style>
+    p.button_line {
+        margin: 30px;
+        text-align: center;
+    }
+
+	a.button {
+    	border: 1px solid #d35400;
+        border-radius: 5px;
+        padding: 10px;
+        min-width: 120px;
+        font-family: 'Helvetica Neue';
+        font-size: 16px;
+        color: white;
+        background-color: #d35400;
+    }
+</style>
+
+<p>{{ _('Hi'), {{first_name}}:</p>
+
+<p>{{ _('We have received a password change request for your keepcoding account')</p>
+
+<li><ul>{{ _('Password: please follow this link to change the password:')}} <a href="{{ confirm_url }}">{{ confirm_url }}</a></ul></li>
+
+<p class="button_line">{{ _('Click here to change your password')}}<a class="button" href="{{ confirm_url }}"></a></p>
+
+<p>{{_('We recommend that you use only strong passwords, combining different types of characters: uppercase, lowercase, numbers, etc.')}}</p>
+
+<p>{{_('Kind regards!')}}</p>
+
+<p>PD: {{_('If you do not use the link in the next hour, it will expire.')}}.</p>
